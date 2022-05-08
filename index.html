@@ -171,7 +171,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-05-08 15:27:07 / 修改时间：16:54:23" itemprop="dateCreated datePublished" datetime="2022-05-08T15:27:07+08:00">2022-05-08</time>
+              <time title="创建时间：2022-05-08 15:27:07 / 修改时间：17:12:01" itemprop="dateCreated datePublished" datetime="2022-05-08T15:27:07+08:00">2022-05-08</time>
             </span>
 
           
@@ -336,7 +336,7 @@
 <p>:hover 鼠标移动到链接上会发生改变</p>
 <p>:active 选定的链接</p>
 <p>按照LVHA顺序，不能颠倒</p>
-<p>:focus伪类选择器，用于选取获得焦点的<input>类表单元素</p>
+<p>:focus伪类选择器，用于选取获得焦点的input类表单元素</p>
 <table>
 <thead>
 <tr>
@@ -734,7 +734,9 @@
 <blockquote>
 <p>这些标签默认都是块元素，但在IE9中，需要转化成块级元素</p>
 </blockquote>
-<h3 id="2-新增的多媒体标签"><a href="#2-新增的多媒体标签" class="headerlink" title="2.新增的多媒体标签"></a>2.新增的多媒体标签</h3><p>插入音频： <audio src="音频地址" controls></audio></p>
+<h3 id="2-新增的多媒体标签"><a href="#2-新增的多媒体标签" class="headerlink" title="2.新增的多媒体标签"></a>2.新增的多媒体标签</h3><p>插入音频： </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;音频地址&quot;</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <table>
 <thead>
 <tr>
@@ -764,7 +766,9 @@
 <td>音频的URL</td>
 </tr>
 </tbody></table>
-<p>插入视频： <video src="视频地址" controls height width></video></p>
+<p>插入视频： </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;视频地址&quot;</span> <span class="attr">controls</span> <span class="attr">height</span> <span class="attr">width</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>常见属性：</p>
 <table>
 <thead>
@@ -903,7 +907,7 @@
 </tbody></table>
 <p>一些新增的表单属性：</p>
 <p><img src="/2022/05/08/web-css%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/html5%E6%96%B0%E5%A2%9E%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A7.png" alt="html5新增表单属性"></p>
-<h1 id="css3新特性"><a href="#css3新特性" class="headerlink" title="css3新特性"></a>css3新特性</h1><h3 id="1-新增的选择器分类"><a href="#1-新增的选择器分类" class="headerlink" title="1.新增的选择器分类"></a>1.新增的选择器分类</h3><h4 id="1-1属性选择器"><a href="#1-1属性选择器" class="headerlink" title="1.1属性选择器"></a>1.1属性选择器</h4><p>根据元素的特定属性来选择元素</p>
+<h1 id="css3新特性"><a href="#css3新特性" class="headerlink" title="css3新特性"></a>css3新特性</h1><h3 id="1-新增的选择器分类"><a href="#1-新增的选择器分类" class="headerlink" title="1.新增的选择器分类"></a>1.新增的选择器分类</h3><h4 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h4><p>根据元素的特定属性来选择元素</p>
 <table>
 <thead>
 <tr>
@@ -936,7 +940,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">value</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--选出input标签中有value属性的元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">input</span><span class="selector-attr">[value]</span>&#123; &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--选出input标签中有type属性且值为text的元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">input</span><span class="selector-attr">[type=<span class="string">&quot;text&quot;</span>]</span>&#123; &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>类选择器、属性选择器、伪类选择器 权重都是10</p>
-<h4 id="1-2伪类结构选择器"><a href="#1-2伪类结构选择器" class="headerlink" title="1.2伪类结构选择器"></a>1.2伪类结构选择器</h4><p>根据文档结构来选择元素，常用于根据父级选择器选择里面的子元素</p>
+<h4 id="伪类结构选择器"><a href="#伪类结构选择器" class="headerlink" title="伪类结构选择器"></a>伪类结构选择器</h4><p>根据文档结构来选择元素，常用于根据父级选择器选择里面的子元素</p>
 <table>
 <thead>
 <tr>
@@ -972,7 +976,7 @@
 <p>nth-child(n) ；n可以是数字(1,2,3,,,,)，关键字（even,odd），公式(2n,2n+1,5n,n+5,-n+5,,,,n从0开始递增取值)</p>
 <p><font color="red">nth-child(n)和nth-of-type(n)的区别</font>：</p>
 <p>nth-child(n)会先对所有子元素排序，找到第n个子元素（固定），然后看看是否和E匹配，而nth-of-type会先找到所有E，再排序选择第n个子元素</p>
-<h4 id="1-3伪元素选择器（权重为1）"><a href="#1-3伪元素选择器（权重为1）" class="headerlink" title="1.3伪元素选择器（权重为1）"></a>1.3伪元素选择器（权重为1）</h4><table>
+<h4 id="伪元素选择器（权重为1）"><a href="#伪元素选择器（权重为1）" class="headerlink" title="伪元素选择器（权重为1）"></a>伪元素选择器（权重为1）</h4><table>
 <thead>
 <tr>
 <th>选择符</th>
@@ -993,14 +997,14 @@
 <p>代码示例：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">::before</span>&#123;<span class="comment">/*生成的伪元素是p的子元素，因此若设置绝对定位，需要将p设置为相对定位*/</span></span><br><span class="line">    <span class="attribute">position</span>:absolute;</span><br><span class="line">    <span class="attribute">right</span>:<span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">&quot;\e91e&quot;</span>;<span class="comment">/*网站中下载的小图标编号*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-CSS3盒子模型"><a href="#2-CSS3盒子模型" class="headerlink" title="2.CSS3盒子模型"></a>2.CSS3盒子模型</h3><p>通过box-sizing来指定盒模型 </p>
+<h3 id="CSS3盒子模型"><a href="#CSS3盒子模型" class="headerlink" title="CSS3盒子模型"></a>CSS3盒子模型</h3><p>通过box-sizing来指定盒模型 </p>
 <ul>
 <li>box-sizing:content-box   盒子大小为width+padding+border(默认)</li>
 <li>box-sizing:border-box   盒子大小为width（padding和border不会撑大盒子）</li>
 </ul>
-<h3 id="3-盒子宽度calc函数"><a href="#3-盒子宽度calc函数" class="headerlink" title="3.盒子宽度calc函数"></a>3.盒子宽度calc函数</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">width</span>:<span class="built_in">calc</span>(<span class="number">100%</span>-<span class="number">30px</span>);<span class="comment">/*盒子宽度永远比父盒子宽度小30px*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="盒子宽度calc函数"><a href="#盒子宽度calc函数" class="headerlink" title="盒子宽度calc函数"></a>盒子宽度calc函数</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">width</span>:<span class="built_in">calc</span>(<span class="number">100%</span>-<span class="number">30px</span>);<span class="comment">/*盒子宽度永远比父盒子宽度小30px*/</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="4-过渡效果"><a href="#4-过渡效果" class="headerlink" title="4.过渡效果"></a>4.过渡效果</h3><p>谁做过渡给谁加</p>
+<h3 id="过渡效果"><a href="#过渡效果" class="headerlink" title="过渡效果"></a>过渡效果</h3><p>谁做过渡给谁加</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transition</span>:要过渡的属性 花费时间 运动曲线 何时开始; <span class="comment">/*若是改变多个属性，则并排写，用逗号隔开*/</span></span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -1009,7 +1013,7 @@
 <li><strong>运动曲线</strong>：默认为ease逐渐慢下来（可以省略）、linear匀速、ease-in加速、ease-out减速、ease-in-out先加速后减速</li>
 <li><strong>何时开始</strong>：单位是秒，可以设置延迟触发时间（可以省略），通常在hover中使用</li>
 </ul>
-<h2 id="CSS元素的继承性"><a href="#CSS元素的继承性" class="headerlink" title="CSS元素的继承性"></a>CSS元素的继承性</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hoyong/articles/10690119.html">https://www.cnblogs.com/hoyong/articles/10690119.html</a></p>
+<h1 id="CSS元素的继承性"><a href="#CSS元素的继承性" class="headerlink" title="CSS元素的继承性"></a>CSS元素的继承性</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hoyong/articles/10690119.html">https://www.cnblogs.com/hoyong/articles/10690119.html</a></p>
 
       
     </div>
