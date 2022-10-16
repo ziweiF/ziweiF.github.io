@@ -171,7 +171,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-10-16 21:23:45 / 修改时间：21:57:36" itemprop="dateCreated datePublished" datetime="2022-10-16T21:23:45+08:00">2022-10-16</time>
+              <time title="创建时间：2022-10-16 21:23:45 / 修改时间：22:07:36" itemprop="dateCreated datePublished" datetime="2022-10-16T21:23:45+08:00">2022-10-16</time>
             </span>
 
           
@@ -220,16 +220,16 @@
 <ul>
 <li>容器与对象是一一对应的关系</li>
 <li>{{}}内可以写js表达式，如：1+1，Date.now()
-+ 真实开发中只有一个vue实例，并且会配合组件一起使用
-+ <mark><font color="red">**vue实例中如果有箭头函数，函数内的this不是指向vue实例，而会往上一层找**</font></mark>
+- 真实开发中只有一个vue实例，并且会配合组件一起使用
+- <mark><font color="red">**vue实例中如果有箭头函数，函数内的this不是指向vue实例，而会往上一层找**</font></mark>
 
 MVVM模型
 
 ![MVVM](:vue:/mvvm.png)
 
-view: 视图层。也就是dom层，主要用于给用户展示各种信息
+view: 视图层。也就是dom层，主要用于给用户展示各种信息\n
 
-model：数据层。来自于服务器中的数据
+model：数据层。来自于服务器中的数据\n
 
 vueModel: 视图模型层。是视图和数据的桥梁。一方面实现了数据绑定，将model的改变实时反映到view中，另一方面实现了DOM监听，当DOM发生一些事件时，可以监听到，并在需要的情况下改变对应的Data。
 
