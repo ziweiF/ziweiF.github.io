@@ -22,20 +22,22 @@
 
   <meta name="description" content="vue基本知识点记载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue">
-<meta property="og:url" content="http://example.com/2022/10/16/vue/index.html">
+<meta property="og:title" content="vue生命周期">
+<meta property="og:url" content="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/index.html">
 <meta property="og:site_name" content="wiwm的博客">
 <meta property="og:description" content="vue基本知识点记载">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/10/16/vue/mvvm.png">
-<meta property="og:image" content="http://example.com/2022/10/16/vue/%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/mvvm.png">
+<meta property="og:image" content="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0.png">
 <meta property="article:published_time" content="2022-10-16T14:27:07.000Z">
-<meta property="article:modified_time" content="2022-11-04T07:30:53.082Z">
+<meta property="article:modified_time" content="2022-11-04T07:35:33.203Z">
 <meta property="article:author" content="ziweif">
+<meta property="article:tag" content="web前端">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2022/10/16/vue/mvvm.png">
+<meta name="twitter:image" content="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/mvvm.png">
 
-<link rel="canonical" href="http://example.com/2022/10/16/vue/">
+<link rel="canonical" href="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 
 
 <script id="page-configurations">
@@ -48,7 +50,7 @@
   };
 </script>
 
-  <title>vue | wiwm的博客</title>
+  <title>vue生命周期 | wiwm的博客</title>
   
 
 
@@ -164,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/16/vue/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author.jpg">
@@ -177,7 +179,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          vue
+          vue生命周期
         </h1>
 
         <div class="post-meta">
@@ -194,8 +196,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-04 15:30:53" itemprop="dateModified" datetime="2022-11-04T15:30:53+08:00">2022-11-04</time>
+                <time title="修改时间：2022-11-04 15:35:33" itemprop="dateModified" datetime="2022-11-04T15:35:33+08:00">2022-11-04</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E7%AF%87/" itemprop="url" rel="index"><span itemprop="name">-前端框架篇</span></a>
+                </span>
+            </span>
 
           
             <div class="post-description">vue基本知识点记载</div>
@@ -250,17 +261,42 @@
 </ul>
 </blockquote>
 <p><strong>MVVM模型</strong></p>
-<p><img src="/2022/10/16/vue/mvvm.png" alt="MVVM"></p>
+<p><img src="/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/mvvm.png" alt="MVVM"></p>
 <p>view: 视图层。也就是dom层，主要用于给用户展示各种信息</p>
 <p>model：数据层。来自于服务器中的数据</p>
 <p>vueModel: 视图模型层。是视图和数据的桥梁。一方面实现了数据绑定，将model的改变实时反映到view中，另一方面实现了DOM监听，当DOM发生一些事件时，可以监听到，并在需要的情况下改变对应的Data。</p>
-<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p><img src="/2022/10/16/vue/%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png" alt="工作原理"></p>
+<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p><img src="/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png" alt="工作原理"></p>
 <ol>
 <li>通过建立虚拟dom树<code>document.createDocumentFragment()</code>,方法创建虚拟dom树。</li>
 <li>一旦被监测的数据改变，会通过[Object.defineProperty]定义的数据拦截，截取到数据的变化。</li>
 <li>截取到的数据变化，从而通过订阅——发布者模式，触发Watcher（观察者）,从而改变虚拟dom的中的具体数据。</li>
 <li>最后，通过更新虚拟dom的元素值，从而改变最后渲染dom树的值，完成双向绑定</li>
 </ol>
+<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>开始创建、初始化数据、编译模板、挂载Dom、渲染→更新→渲染、卸载。</p>
+<p>当一个 Vue 实例被创建时，它将 <code>data</code> 对象中的所有的 property 加入到 Vue 的<strong>响应式系统</strong>中。当这些 property 的值发生改变时，视图将会产生“响应”，即匹配更新为新的值。当这些数据改变时，视图会进行重渲染。</p>
+<p><font color="red"><strong>生命周期函数中的this指向的是vm或者组件实例对象</strong></font></p>
+<p><img src="/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0.png" alt="生命周期钩子函数"></p>
+<p>上图涉及的函数都称为钩子函数，钩子就是在某个阶段给你一个做某些处理的机会。</p>
+<p><strong>beforeCreate( 创建前 )</strong></p>
+<p>数据监测和数据代理并未初始化，因此无法访问methods， data， computed等上的方法和数据</p>
+<p><strong>created ( 创建后 ）</strong></p>
+<p>实例已经创建完成，实例已完成以下配置：数据观测、属性和方法的运算，watch/event事件回调，完成了data 数据的初始化，el没有。</p>
+<p><strong>beforeMount（挂载前）</strong></p>
+<p>实例已完成以下的配置： 编译模板，把data里面的数据和模板生成html，完成了el和data 初始化，注意此时还没有挂在html到页面上。形成的是虚拟DOM</p>
+<p><strong>mounted（挂载后）</strong></p>
+<p>挂载完成，也就是模板中的HTML渲染到HTML页面中，此时一般可以做一些ajax操作，启动定时器，绑定自定义事件、订阅消息等，mounted只会执行一次。</p>
+<p><strong>beforeUpdate（更新前）</strong></p>
+<p>在数据更新之前被调用，发生在虚拟DOM重新渲染和打补丁之前，可以在该钩子中进一步地更改状态，不会触发附加地重渲染过程</p>
+<p><strong>updated（更新后）</strong></p>
+<p>在由于数据更改导致地虚拟DOM重新渲染和打补丁时会调用，该钩子在服务器端渲染期间不被调用</p>
+<p><strong>beforeDestroy（销毁前）</strong></p>
+<p>实例仍然完全可用，</p>
+<ol>
+<li>这一步还可以用this来获取实例，</li>
+<li>一般在这一步做一些重置的操作，比如清除掉组件中的定时器 和 监听的dom事件</li>
+</ol>
+<p><strong>destroyed（销毁后）</strong></p>
+<p>在实例销毁之后调用，调用后，所有的事件监听器会被移出，所有的子实例也会被销毁，该钩子在服务器端渲染期间不被调用</p>
 
     </div>
 
@@ -269,6 +305,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/web%E5%89%8D%E7%AB%AF/" rel="tag"># web前端</a>
+          </div>
 
         
 
@@ -276,12 +315,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/10/16/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" rel="prev" title="vue生命周期">
-      <i class="fa fa-chevron-left"></i> vue生命周期
+    <a href="/2022/05/08/web-css%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" rel="prev" title="web-css相关知识">
+      <i class="fa fa-chevron-left"></i> web-css相关知识
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/10/17/%E5%9B%9E%E6%BA%AF/" rel="next" title="回溯">
-      回溯 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/10/16/vue/" rel="next" title="vue">
+      vue <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -341,7 +380,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BDdevtool%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7"><span class="nav-number">1.1.</span> <span class="nav-text">下载devtool调试工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5"><span class="nav-number">1.2.</span> <span class="nav-text">项目中引入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A4%E8%AF%86Vue"><span class="nav-number">2.</span> <span class="nav-text">认识Vue</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">工作原理</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BDdevtool%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7"><span class="nav-number">1.1.</span> <span class="nav-text">下载devtool调试工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5"><span class="nav-number">1.2.</span> <span class="nav-text">项目中引入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A4%E8%AF%86Vue"><span class="nav-number">2.</span> <span class="nav-text">认识Vue</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">工作原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">2.2.</span> <span class="nav-text">生命周期</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
