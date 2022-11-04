@@ -28,7 +28,7 @@
 <meta property="og:description" content="文档对象模型（Document Object Model，简称 DOM），是 W3C 组织推荐的处理可扩展标记语言（HTML或者XML）的标准编程接口">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-25T08:32:33.000Z">
-<meta property="article:modified_time" content="2022-11-04T09:12:24.049Z">
+<meta property="article:modified_time" content="2022-11-04T09:16:40.813Z">
 <meta property="article:author" content="ziweif">
 <meta property="article:tag" content="DOM">
 <meta name="twitter:card" content="summary">
@@ -192,7 +192,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-04 17:12:24" itemprop="dateModified" datetime="2022-11-04T17:12:24+08:00">2022-11-04</time>
+                <time title="修改时间：2022-11-04 17:16:40" itemprop="dateModified" datetime="2022-11-04T17:16:40+08:00">2022-11-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -216,25 +216,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="1-获取页面元素"><a href="#1-获取页面元素" class="headerlink" title="1.获取页面元素"></a>1.获取页面元素</h1><h2 id="1-1根据ID获取"><a href="#1-1根据ID获取" class="headerlink" title="1.1根据ID获取"></a>1.1根据ID获取</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doucument<span class="selector-class">.getElementByld</span>(&#x27;id名&#x27;)</span><br></pre></td></tr></table></figure>
+        <h1 id="获取页面元素"><a href="#获取页面元素" class="headerlink" title="获取页面元素"></a>获取页面元素</h1><h2 id="根据ID获取"><a href="#根据ID获取" class="headerlink" title="根据ID获取"></a>根据ID获取</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doucument<span class="selector-class">.getElementByld</span>(&#x27;id名&#x27;)</span><br></pre></td></tr></table></figure>
 
-<h2 id="1-2根据标签名获取"><a href="#1-2根据标签名获取" class="headerlink" title="1.2根据标签名获取"></a>1.2根据标签名获取</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doucument<span class="selector-class">.getElementsByTagName</span>(&#x27;标签名&#x27;);</span><br></pre></td></tr></table></figure>
+<h2 id="根据标签名获取"><a href="#根据标签名获取" class="headerlink" title="根据标签名获取"></a>根据标签名获取</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doucument<span class="selector-class">.getElementsByTagName</span>(&#x27;标签名&#x27;);</span><br></pre></td></tr></table></figure>
 
 <p>返回的是一个集合，以伪数组形式存储。因此操作我们需要的元素就得遍历；</p>
 <p>也可以获取某个标签内指定的子元素</p>
-<h2 id="1-3通过H5新增方法获取"><a href="#1-3通过H5新增方法获取" class="headerlink" title="1.3通过H5新增方法获取"></a>1.3通过H5新增方法获取</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document<span class="selector-class">.getElementsByClassName</span>(&#x27;类名&#x27;); </span><br></pre></td></tr></table></figure>
+<h2 id="通过H5新增方法获取"><a href="#通过H5新增方法获取" class="headerlink" title="通过H5新增方法获取"></a>通过H5新增方法获取</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document<span class="selector-class">.getElementsByClassName</span>(&#x27;类名&#x27;); </span><br></pre></td></tr></table></figure>
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回指定选择器中的第一个对象元素</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;选择器&#x27;</span>);<span class="comment">//类选择器.box ;id选择器 #nav</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回指定选择器中的所有对象元素。返回 NodeList 对象，可以通过索引访问，索引值从 0 开始</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;选择器&#x27;</span>);<span class="comment">//类选择器.box ;id选择器 #nav</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="1-4获取特殊元素"><a href="#1-4获取特殊元素" class="headerlink" title="1.4获取特殊元素"></a>1.4获取特殊元素</h2><p>获取：body</p>
+<h2 id="获取特殊元素"><a href="#获取特殊元素" class="headerlink" title="获取特殊元素"></a>获取特殊元素</h2><p>获取：body</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document<span class="selector-class">.body</span>;</span><br></pre></td></tr></table></figure>
 
 <p>获取：html</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document<span class="selector-class">.documentElement</span>;</span><br></pre></td></tr></table></figure>
 
-<h1 id="2-操作元素"><a href="#2-操作元素" class="headerlink" title="2.操作元素"></a>2.操作元素</h1><p>元素的文本内容: <strong>1.</strong> element.innerText;     <strong>2.</strong>  element.innerHTML</p>
+<h1 id="操作元素"><a href="#操作元素" class="headerlink" title="操作元素"></a>操作元素</h1><p>元素的文本内容: <strong>1.</strong> element.innerText;     <strong>2.</strong>  element.innerHTML</p>
 <p>可以获取和改变元素的内容</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;汉字&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">str=<span class="selector-tag">div</span><span class="selector-class">.innerText</span>;</span><br></pre></td></tr></table></figure>
 
@@ -243,45 +243,45 @@
 <li>innerText 不识别html标签,去除空格和换行</li>
 <li>innerHTML识别html标签,保留空格和换行</li>
 </ol>
-<h2 id="2-1改变元素属性"><a href="#2-1改变元素属性" class="headerlink" title="2.1改变元素属性"></a>2.1改变元素属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元素.属性=xxx;</span><br></pre></td></tr></table></figure>
+<h2 id="改变元素属性"><a href="#改变元素属性" class="headerlink" title="改变元素属性"></a>改变元素属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元素.属性=xxx;</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-2改变样式属性"><a href="#2-2改变样式属性" class="headerlink" title="2.2改变样式属性"></a>2.2改变样式属性</h2><h3 id="2-2-1行内样式操作："><a href="#2-2-1行内样式操作：" class="headerlink" title="2.2.1行内样式操作："></a>2.2.1行内样式操作：</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元素<span class="selector-class">.style</span>.属性=xxx;</span><br></pre></td></tr></table></figure>
+<h2 id="改变样式属性"><a href="#改变样式属性" class="headerlink" title="改变样式属性"></a>改变样式属性</h2><h3 id="行内样式操作："><a href="#行内样式操作：" class="headerlink" title="行内样式操作："></a>行内样式操作：</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元素<span class="selector-class">.style</span>.属性=xxx;</span><br></pre></td></tr></table></figure>
 
 <p><mark>注意</mark></p>
 <p>JS里面的样式采取驼峰命名法，比如 fontSize ，backgroundColor</p>
 <p>JS 修改 style 样式操作 ，产生的是<font color="red">行内样式</font>，CSS权重比较高</p>
-<h3 id="2-2-2类名样式操作："><a href="#2-2-2类名样式操作：" class="headerlink" title="2.2.2类名样式操作："></a>2.2.2类名样式操作：</h3><p>在css中声明一个类，写入需要修改的样式，然后加入到元素中，相当于给元素添加了一个类。</p>
+<h3 id="类名样式操作："><a href="#类名样式操作：" class="headerlink" title="类名样式操作："></a>类名样式操作：</h3><p>在css中声明一个类，写入需要修改的样式，然后加入到元素中，相当于给元素添加了一个类。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">element<span class="selector-class">.className</span>=&#x27;类名&#x27;;</span><br></pre></td></tr></table></figure>
 
 <p><mark>注意</mark></p>
 <p>className 会直接更改元素的类名，会覆盖原先的类名</p>
-<h2 id="2-3获取属性值"><a href="#2-3获取属性值" class="headerlink" title="2.3获取属性值"></a>2.3获取属性值</h2><ol>
+<h2 id="获取属性值"><a href="#获取属性值" class="headerlink" title="获取属性值"></a>获取属性值</h2><ol>
 <li>element.属性名；</li>
 <li>element.getAttribute(“属性名”)；</li>
 </ol>
 <p><mark>注意</mark></p>
 <p>程序员可以自己创建一个属性（自定义属性），第一种方法只能获取自带的固有属性，而第二种方法可以获取程序员自定义属性</p>
-<h2 id="2-4设置属性值"><a href="#2-4设置属性值" class="headerlink" title="2.4设置属性值"></a>2.4设置属性值</h2><ol>
+<h2 id="设置属性值"><a href="#设置属性值" class="headerlink" title="设置属性值"></a>设置属性值</h2><ol>
 <li>element.属性名=‘值’；</li>
 <li>element.setAttribute(“属性名”,值)；</li>
 </ol>
-<h2 id="2-5移除属性"><a href="#2-5移除属性" class="headerlink" title="2.5移除属性"></a>2.5移除属性</h2><p>element.removeAttribute(‘属性名’)</p>
-<h2 id="2-6-html5新规范"><a href="#2-6-html5新规范" class="headerlink" title="2.6 html5新规范"></a>2.6 html5新规范</h2><p>规定自定义属性名以data-开头。</p>
+<h2 id="移除属性"><a href="#移除属性" class="headerlink" title="移除属性"></a>移除属性</h2><p>element.removeAttribute(‘属性名’)</p>
+<h2 id="html5新规范"><a href="#html5新规范" class="headerlink" title="html5新规范"></a>html5新规范</h2><p>规定自定义属性名以data-开头。</p>
 <p>例如一个自定义属性为data-nameA, 获取此自定义属性的方法：</p>
 <ol>
 <li>element.getAtrribute(“data-nameA”)；</li>
 <li>element.dataset.nameA, 或element.dataset[‘nameA’]，</li>
 </ol>
 <p>dataset是一个集合，里面存放了以data开头的自定义属性。如果自定义属性里面有多个-链接的单词，我们获取的时候采取驼峰命名法，并去掉-连接符</p>
-<h1 id="3-节点操作"><a href="#3-节点操作" class="headerlink" title="3.节点操作"></a>3.节点操作</h1><p>页面中的所有内容都是节点，节点至少拥有nodeType（节点类型）、nodeName（节点名称）和nodeValue（节点值）这三个基本属性</p>
+<h1 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h1><p>页面中的所有内容都是节点，节点至少拥有nodeType（节点类型）、nodeName（节点名称）和nodeValue（节点值）这三个基本属性</p>
 <ul>
 <li>元素节点：nodeType=1</li>
 <li>属性节点：nodeType=2</li>
 <li>文本节点：nodeType=3（文本节点包括文字，空格，换行）</li>
 </ul>
-<h2 id="3-1父节点"><a href="#3-1父节点" class="headerlink" title="3.1父节点"></a>3.1父节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">parentNode</span><span class="comment">//返回最近的一个父节点</span></span><br></pre></td></tr></table></figure>
+<h2 id="父节点"><a href="#父节点" class="headerlink" title="父节点"></a>父节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">parentNode</span><span class="comment">//返回最近的一个父节点</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="3-2子节点"><a href="#3-2子节点" class="headerlink" title="3.2子节点"></a>3.2子节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parentNode.<span class="property">childNodes</span><span class="comment">//返回所有子节点的集合，包括元素节点，文本节点等</span></span><br></pre></td></tr></table></figure>
+<h2 id="子节点"><a href="#子节点" class="headerlink" title="子节点"></a>子节点</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parentNode.<span class="property">childNodes</span><span class="comment">//返回所有子节点的集合，包括元素节点，文本节点等</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parentNode.<span class="property">firstChild</span><span class="comment">//只返回第一个子节点</span></span><br><span class="line">parentNode.<span class="property">lastChild</span><span class="comment">//只返回最后一个子节点</span></span><br></pre></td></tr></table></figure>
 
@@ -294,7 +294,7 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parentNode.<span class="property">chilren</span>[<span class="number">0</span>]</span><br><span class="line">parentNode.<span class="property">chilren</span>[parentNode.<span class="property">chilren</span>.<span class="property">length</span> - <span class="number">1</span>]</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-3兄弟节点"><a href="#3-3兄弟节点" class="headerlink" title="3.3兄弟节点"></a>3.3兄弟节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">nextSibling</span><span class="comment">//返回下一个兄弟节点（包含文本节点等）</span></span><br></pre></td></tr></table></figure>
+<h2 id="兄弟节点"><a href="#兄弟节点" class="headerlink" title="兄弟节点"></a>兄弟节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">nextSibling</span><span class="comment">//返回下一个兄弟节点（包含文本节点等）</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">previousSibling</span><span class="comment">//返回上一个兄弟节点（包含文本节点等）</span></span><br></pre></td></tr></table></figure>
 
@@ -302,18 +302,18 @@
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">previousElementSibling</span><span class="comment">//返回上一个兄弟元素节点，IE9才支持</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="3-4创建节点"><a href="#3-4创建节点" class="headerlink" title="3.4创建节点"></a>3.4创建节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;tagName&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;tagName&#x27;</span>);</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-5添加节点"><a href="#3-5添加节点" class="headerlink" title="3.5添加节点"></a>3.5添加节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> child=<span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;tagName&#x27;</span>);</span><br><span class="line">node.<span class="title function_">appendChild</span>(child);<span class="comment">//将创建的新节点添加到指定父节点的子节点列表末尾</span></span><br><span class="line">node.<span class="title function_">insertBefore</span>(child,指定元素);<span class="comment">//将创建的新节点child添加到node节点的指定子节点前面</span></span><br></pre></td></tr></table></figure>
+<h2 id="添加节点"><a href="#添加节点" class="headerlink" title="添加节点"></a>添加节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> child=<span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;tagName&#x27;</span>);</span><br><span class="line">node.<span class="title function_">appendChild</span>(child);<span class="comment">//将创建的新节点添加到指定父节点的子节点列表末尾</span></span><br><span class="line">node.<span class="title function_">insertBefore</span>(child,指定元素);<span class="comment">//将创建的新节点child添加到node节点的指定子节点前面</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="3-6删除节点"><a href="#3-6删除节点" class="headerlink" title="3.6删除节点"></a>3.6删除节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="title function_">removeChild</span>(child)</span><br></pre></td></tr></table></figure>
+<h2 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="title function_">removeChild</span>(child)</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-7复制节点"><a href="#3-7复制节点" class="headerlink" title="3.7复制节点"></a>3.7复制节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="title function_">cloneNode</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="title function_">cloneNode</span>()</span><br></pre></td></tr></table></figure>
 
 <p>先克隆出一个节点，再利用appendChild等方法添加到指定位置</p>
 <p>如果cloneNode参数为空或者false,则是浅拷贝，只克隆节点本身，不克隆里面的子节点</p>
 <p>如果参数为true,则是深度拷贝，会复制节点本身以及所有的子节点</p>
-<h2 id="3-8三种创建元素的区别"><a href="#3-8三种创建元素的区别" class="headerlink" title="3.8三种创建元素的区别"></a>3.8三种创建元素的区别</h2><ol>
+<h2 id="三种创建元素的区别"><a href="#三种创建元素的区别" class="headerlink" title="三种创建元素的区别"></a>三种创建元素的区别</h2><ol>
 <li>doucument.write()</li>
 </ol>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&quot;&lt;div&gt;123&lt;/div&gt;&quot;</span>)</span><br></pre></td></tr></table></figure>
@@ -329,7 +329,7 @@
 <li>document.createElement()</li>
 </ol>
 <p>创建多个元素时效率低一点点，但是结构更清晰</p>
-<h1 id="4-事件"><a href="#4-事件" class="headerlink" title="4.事件"></a>4.事件</h1><h2 id="4-1注册事件"><a href="#4-1注册事件" class="headerlink" title="4.1注册事件"></a>4.1注册事件</h2><p>传统方式：on开头的事件，例如onclick, 同一个元素的同一个事件只能设置一个处理函数。</p>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><h2 id="注册事件"><a href="#注册事件" class="headerlink" title="注册事件"></a>注册事件</h2><p>传统方式：on开头的事件，例如onclick, 同一个元素的同一个事件只能设置一个处理函数。</p>
 <p>事件监听方式：</p>
 <p><font color="red">1</font>.target.addEventListener(‘type’,listener(),usecapture)<mark> IE9以上支持</mark>，当对象触发指定的事件时，会执行事件处理函数</p>
 <ul>
@@ -344,7 +344,7 @@
 <li><p><code>callback</code>()： 事件处理函数，当目标触发事件时回调函数被调用</p>
 </li>
 </ul>
-<h2 id="4-2删除（解绑）事件"><a href="#4-2删除（解绑）事件" class="headerlink" title="4.2删除（解绑）事件"></a>4.2删除（解绑）事件</h2><p>传统方式：事件赋null，例如eventTarget.onclick = null;</p>
+<h2 id="删除（解绑）事件"><a href="#删除（解绑）事件" class="headerlink" title="删除（解绑）事件"></a>删除（解绑）事件</h2><p>传统方式：事件赋null，例如eventTarget.onclick = null;</p>
 <p>监听方式：</p>
 <p><font color="red">1</font>.target.removeEventListener(‘type’,listener(),usecapture)<mark> IE9以上支持</mark></p>
 <p><code>type</code>:事件类型字符串，比如click,mouseover,注意这里<font color="red">不要带on</font></p>
@@ -355,7 +355,7 @@
 <p><font color="red">2</font>.Target.detachEvent(‘eventNameWithOn’,callback())<mark> IE9以前支持</mark>,使用较少，了解即可</p>
 <p><code>eventNameWithOn</code>：事件类型字符串，比如 onclick 、onmouseover ，这里<font color="red">要带 on</font></p>
 <p><code>callback</code>()： 事件处理函数，当目标触发事件时回调函数被调用</p>
-<h2 id="4-3DOM事件流"><a href="#4-3DOM事件流" class="headerlink" title="4.3DOM事件流"></a>4.3DOM事件流</h2><blockquote>
+<h2 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h2><blockquote>
 <p>事件流描述的是从页面中接收事件的顺序，事件发生时会在元素节点之间按照特定的顺序传播，这个传播过程就是DOM事件流。</p>
 </blockquote>
 <p>分为3个阶段：</p>
@@ -368,7 +368,7 @@
 <li><code>onclick</code> 和 <code>attachEvent</code>只能得到冒泡阶段</li>
 <li>有些事件是没有冒泡的，比如 onblur、onfocus、onmouseenter、onmouseleave</li>
 </ul>
-<h2 id="4-4事件对象"><a href="#4-4事件对象" class="headerlink" title="4.4事件对象"></a>4.4事件对象</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">eventTarget.<span class="property">onclick</span> = <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">   <span class="comment">// 这个 event 就是事件对象，我们还可以写成 e 或者 evt </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">eventTarget.<span class="property">onclick</span> = <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">   <span class="comment">// 这个 event 就是事件对象，我们还可以写成 e 或者 evt </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>event对象代表事件的状态，比如键盘按键的状态、鼠标的位置、鼠标按钮的状态。事件发生后跟事件相关的一系列信息数据的集合都放到这个对象里面。当我们注册事件时， event 对象就会被系统自动创建。</p>
@@ -427,14 +427,14 @@
 <li><code>this</code>是事件绑定的元素，这个函数的调用者(绑定这个事件的元素)</li>
 <li><code>e.target</code>是事件触发的元素</li>
 </ul>
-<h2 id="4-5事件委托"><a href="#4-5事件委托" class="headerlink" title="4.5事件委托"></a>4.5事件委托</h2><p>也称为事件代理，在 jQuery 里面称为事件委派</p>
+<h2 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h2><p>也称为事件代理，在 jQuery 里面称为事件委派</p>
 <p><font color="red">原理:<strong>不是每个子节点单独设置事件监听器，而是事件监听器设置在其父节点上，然后利用冒泡原理影响设置每个子节点</strong></font></p>
 <p><font color="red">场景：</font></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p><font color="red">需求：</font>点击li标签都会弹出弹框。以前的做法是获取所有li，然后循环给每个li绑定onclick事件。DOM会访问5次，如果访问次数越来越多，<strong>响应时间会延长</strong>。</p>
 <p><font color="red">解决方案：</font>给ul注册点击事件，然后利用事件对象的target来找到当前点击的li,由于冒泡，会传播到ul上，ul有注册事件，就会触发事件监听器。<strong>只操作了一次DOM，提高了性能</strong></p>
-<h2 id="4-6常见鼠标事件和键盘事件"><a href="#4-6常见鼠标事件和键盘事件" class="headerlink" title="4.6常见鼠标事件和键盘事件"></a>4.6常见鼠标事件和键盘事件</h2><table>
+<h2 id="常见鼠标事件和键盘事件"><a href="#常见鼠标事件和键盘事件" class="headerlink" title="常见鼠标事件和键盘事件"></a>常见鼠标事件和键盘事件</h2><table>
 <thead>
 <tr>
 <th>鼠标事件</th>
@@ -498,7 +498,7 @@
 <p>如果三个事件都注册了，则实际执行顺序是： keydown – keypress — keyup</p>
 <p><code>onkeydown</code>和 <code>onkeyup</code> 不区分字母大小写，<code>onkeypress</code> 区分字母大小写。</p>
 <p>在我们实际开发中，我们更多的使用keydown和keyup， 它能识别所有的键（包括功能键）</p>
-<h2 id="4-7禁止鼠标右键和鼠标选中"><a href="#4-7禁止鼠标右键和鼠标选中" class="headerlink" title="4.7禁止鼠标右键和鼠标选中"></a>4.7禁止鼠标右键和鼠标选中</h2><p>都是阻止默认行为，用到preventDefault()方法。</p>
+<h2 id="禁止鼠标右键和鼠标选中"><a href="#禁止鼠标右键和鼠标选中" class="headerlink" title="禁止鼠标右键和鼠标选中"></a>禁止鼠标右键和鼠标选中</h2><p>都是阻止默认行为，用到preventDefault()方法。</p>
 <ul>
 <li>contextmenu 禁用右键菜单</li>
 </ul>
@@ -509,7 +509,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;selectstart&#x27;</span>, <span class="keyword">function</span>(<span class="params">e</span>) &#123;</span><br><span class="line">            e.<span class="title function_">preventDefault</span>();</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-8鼠标事件对象"><a href="#4-8鼠标事件对象" class="headerlink" title="4.8鼠标事件对象"></a>4.8鼠标事件对象</h2><p><strong>event</strong>对象代表事件的状态，跟事件相关的一系列信息的集合。现阶段我们主要是用鼠标事件对象 <strong>MouseEvent</strong> 和键盘事件对象 <strong>KeyboardEvent。</strong></p>
+<h2 id="鼠标事件对象"><a href="#鼠标事件对象" class="headerlink" title="鼠标事件对象"></a>鼠标事件对象</h2><p><strong>event</strong>对象代表事件的状态，跟事件相关的一系列信息的集合。现阶段我们主要是用鼠标事件对象 <strong>MouseEvent</strong> 和键盘事件对象 <strong>KeyboardEvent。</strong></p>
 <table>
 <thead>
 <tr>
@@ -542,7 +542,7 @@
 <td>返回鼠标相对于电脑屏幕的Y坐标</td>
 </tr>
 </tbody></table>
-<h2 id="4-9键盘事件对象"><a href="#4-9键盘事件对象" class="headerlink" title="4.9键盘事件对象"></a>4.9键盘事件对象</h2><table>
+<h2 id="键盘事件对象"><a href="#键盘事件对象" class="headerlink" title="键盘事件对象"></a>键盘事件对象</h2><table>
 <thead>
 <tr>
 <th>键盘事件对象 <strong>属性</strong></th>
@@ -637,7 +637,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0"><span class="nav-number">1.</span> <span class="nav-text">1.获取页面元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1%E6%A0%B9%E6%8D%AEID%E8%8E%B7%E5%8F%96"><span class="nav-number">1.1.</span> <span class="nav-text">1.1根据ID获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2%E6%A0%B9%E6%8D%AE%E6%A0%87%E7%AD%BE%E5%90%8D%E8%8E%B7%E5%8F%96"><span class="nav-number">1.2.</span> <span class="nav-text">1.2根据标签名获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3%E9%80%9A%E8%BF%87H5%E6%96%B0%E5%A2%9E%E6%96%B9%E6%B3%95%E8%8E%B7%E5%8F%96"><span class="nav-number">1.3.</span> <span class="nav-text">1.3通过H5新增方法获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4%E8%8E%B7%E5%8F%96%E7%89%B9%E6%AE%8A%E5%85%83%E7%B4%A0"><span class="nav-number">1.4.</span> <span class="nav-text">1.4获取特殊元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0"><span class="nav-number">2.</span> <span class="nav-text">2.操作元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1%E6%94%B9%E5%8F%98%E5%85%83%E7%B4%A0%E5%B1%9E%E6%80%A7"><span class="nav-number">2.1.</span> <span class="nav-text">2.1改变元素属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2%E6%94%B9%E5%8F%98%E6%A0%B7%E5%BC%8F%E5%B1%9E%E6%80%A7"><span class="nav-number">2.2.</span> <span class="nav-text">2.2改变样式属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1%E8%A1%8C%E5%86%85%E6%A0%B7%E5%BC%8F%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1行内样式操作：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2%E7%B1%BB%E5%90%8D%E6%A0%B7%E5%BC%8F%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2.2类名样式操作：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3%E8%8E%B7%E5%8F%96%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="nav-number">2.3.</span> <span class="nav-text">2.3获取属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4%E8%AE%BE%E7%BD%AE%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="nav-number">2.4.</span> <span class="nav-text">2.4设置属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5%E7%A7%BB%E9%99%A4%E5%B1%9E%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">2.5移除属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-html5%E6%96%B0%E8%A7%84%E8%8C%83"><span class="nav-number">2.6.</span> <span class="nav-text">2.6 html5新规范</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">3.节点操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1%E7%88%B6%E8%8A%82%E7%82%B9"><span class="nav-number">3.1.</span> <span class="nav-text">3.1父节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2%E5%AD%90%E8%8A%82%E7%82%B9"><span class="nav-number">3.2.</span> <span class="nav-text">3.2子节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9"><span class="nav-number">3.3.</span> <span class="nav-text">3.3兄弟节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4%E5%88%9B%E5%BB%BA%E8%8A%82%E7%82%B9"><span class="nav-number">3.4.</span> <span class="nav-text">3.4创建节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9"><span class="nav-number">3.5.</span> <span class="nav-text">3.5添加节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6%E5%88%A0%E9%99%A4%E8%8A%82%E7%82%B9"><span class="nav-number">3.6.</span> <span class="nav-text">3.6删除节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7%E5%A4%8D%E5%88%B6%E8%8A%82%E7%82%B9"><span class="nav-number">3.7.</span> <span class="nav-text">3.7复制节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-8%E4%B8%89%E7%A7%8D%E5%88%9B%E5%BB%BA%E5%85%83%E7%B4%A0%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.8.</span> <span class="nav-text">3.8三种创建元素的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">4.事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1%E6%B3%A8%E5%86%8C%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.1.</span> <span class="nav-text">4.1注册事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2%E5%88%A0%E9%99%A4%EF%BC%88%E8%A7%A3%E7%BB%91%EF%BC%89%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.2.</span> <span class="nav-text">4.2删除（解绑）事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3DOM%E4%BA%8B%E4%BB%B6%E6%B5%81"><span class="nav-number">4.3.</span> <span class="nav-text">4.3DOM事件流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">4.4.</span> <span class="nav-text">4.4事件对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98"><span class="nav-number">4.5.</span> <span class="nav-text">4.5事件委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-6%E5%B8%B8%E8%A7%81%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E5%92%8C%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.6.</span> <span class="nav-text">4.6常见鼠标事件和键盘事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-7%E7%A6%81%E6%AD%A2%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E5%92%8C%E9%BC%A0%E6%A0%87%E9%80%89%E4%B8%AD"><span class="nav-number">4.7.</span> <span class="nav-text">4.7禁止鼠标右键和鼠标选中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-8%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">4.8.</span> <span class="nav-text">4.8鼠标事件对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-9%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">4.9.</span> <span class="nav-text">4.9键盘事件对象</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0"><span class="nav-number">1.</span> <span class="nav-text">获取页面元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AEID%E8%8E%B7%E5%8F%96"><span class="nav-number">1.1.</span> <span class="nav-text">根据ID获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E6%A0%87%E7%AD%BE%E5%90%8D%E8%8E%B7%E5%8F%96"><span class="nav-number">1.2.</span> <span class="nav-text">根据标签名获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87H5%E6%96%B0%E5%A2%9E%E6%96%B9%E6%B3%95%E8%8E%B7%E5%8F%96"><span class="nav-number">1.3.</span> <span class="nav-text">通过H5新增方法获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E7%89%B9%E6%AE%8A%E5%85%83%E7%B4%A0"><span class="nav-number">1.4.</span> <span class="nav-text">获取特殊元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0"><span class="nav-number">2.</span> <span class="nav-text">操作元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E5%8F%98%E5%85%83%E7%B4%A0%E5%B1%9E%E6%80%A7"><span class="nav-number">2.1.</span> <span class="nav-text">改变元素属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E5%8F%98%E6%A0%B7%E5%BC%8F%E5%B1%9E%E6%80%A7"><span class="nav-number">2.2.</span> <span class="nav-text">改变样式属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E5%86%85%E6%A0%B7%E5%BC%8F%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="nav-number">2.2.1.</span> <span class="nav-text">行内样式操作：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%90%8D%E6%A0%B7%E5%BC%8F%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="nav-number">2.2.2.</span> <span class="nav-text">类名样式操作：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="nav-number">2.3.</span> <span class="nav-text">获取属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="nav-number">2.4.</span> <span class="nav-text">设置属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%BB%E9%99%A4%E5%B1%9E%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">移除属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5%E6%96%B0%E8%A7%84%E8%8C%83"><span class="nav-number">2.6.</span> <span class="nav-text">html5新规范</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">节点操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%88%B6%E8%8A%82%E7%82%B9"><span class="nav-number">3.1.</span> <span class="nav-text">父节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E8%8A%82%E7%82%B9"><span class="nav-number">3.2.</span> <span class="nav-text">子节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9"><span class="nav-number">3.3.</span> <span class="nav-text">兄弟节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%8A%82%E7%82%B9"><span class="nav-number">3.4.</span> <span class="nav-text">创建节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9"><span class="nav-number">3.5.</span> <span class="nav-text">添加节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%8A%82%E7%82%B9"><span class="nav-number">3.6.</span> <span class="nav-text">删除节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E5%88%B6%E8%8A%82%E7%82%B9"><span class="nav-number">3.7.</span> <span class="nav-text">复制节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E7%A7%8D%E5%88%9B%E5%BB%BA%E5%85%83%E7%B4%A0%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.8.</span> <span class="nav-text">三种创建元素的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.1.</span> <span class="nav-text">注册事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%EF%BC%88%E8%A7%A3%E7%BB%91%EF%BC%89%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.2.</span> <span class="nav-text">删除（解绑）事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM%E4%BA%8B%E4%BB%B6%E6%B5%81"><span class="nav-number">4.3.</span> <span class="nav-text">DOM事件流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">4.4.</span> <span class="nav-text">事件对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98"><span class="nav-number">4.5.</span> <span class="nav-text">事件委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E5%92%8C%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.6.</span> <span class="nav-text">常见鼠标事件和键盘事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A6%81%E6%AD%A2%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E5%92%8C%E9%BC%A0%E6%A0%87%E9%80%89%E4%B8%AD"><span class="nav-number">4.7.</span> <span class="nav-text">禁止鼠标右键和鼠标选中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">4.8.</span> <span class="nav-text">鼠标事件对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">4.9.</span> <span class="nav-text">键盘事件对象</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
